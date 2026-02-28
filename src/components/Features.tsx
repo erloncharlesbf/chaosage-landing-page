@@ -1,0 +1,41 @@
+import { Swords, Skull, Shield } from "lucide-react";
+
+const features = [
+  {
+    icon: Swords,
+    title: "PvE e PvP Intenso",
+    description: "Explore dungeons épicas e batalhas inesquecíveis.",
+  },
+  {
+    icon: Skull,
+    title: "Eventos Épicos",
+    description: "Participe de eventos exclusivos com grandes recompensas.",
+  },
+  {
+    icon: Shield,
+    title: "Sem Limites",
+    description: "Evolua, crie alianças e conquiste o topo do ranking.",
+  },
+];
+
+const Features = () => {
+  return (
+    <section id="recursos" className="py-16 px-4">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8" style={{ maxWidth: "var(--content-max)" }}>
+        {features.map((f, i) => (
+          <div
+            key={f.title}
+            className="flex flex-col items-center text-center opacity-0 animate-fade-in-up"
+            style={{ animationDelay: `${i * 0.15}s` }}
+          >
+            <f.icon className="w-10 h-10 text-primary mb-3" strokeWidth={1.5} />
+            <h3 className="font-cinzel text-lg font-semibold text-foreground mb-2">{f.title}</h3>
+            <p className="text-muted-foreground text-base leading-relaxed max-w-[260px]">{f.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Features;
