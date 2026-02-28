@@ -1,21 +1,11 @@
-import heroImage from "@/assets/hero.png";
-
 const Hero = () => {
   return (
     <section className="relative pt-[var(--nav-height)]">
       {/* 10px spacing between nav and content */}
       <div style={{ height: "10px" }} />
 
-      <div className="relative w-full overflow-hidden">
-        <img
-          src={heroImage}
-          alt="ChaosAge - Dragões em batalha épica"
-          className="w-full h-auto object-cover"
-          style={{ maxHeight: "600px", objectPosition: "top center" }}
-        />
-        {/* Gradient overlay bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-      </div>
+      {/* Spacer to push CTA below the dragon area */}
+      <div className="h-[350px] sm:h-[450px] md:h-[500px]" />
 
       {/* CTA over/below the image */}
       <div className="relative -mt-32 sm:-mt-40 z-10 flex flex-col items-center text-center px-4 pb-8">
