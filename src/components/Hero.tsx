@@ -27,7 +27,7 @@ const Hero = () => {
         <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-md">
           O MMORPG mais épico como você nunca viu!
         </p>
-        <a href="#" className="hover:scale-105 transition-transform">
+        <a href="#" className="hover:scale-105 transition-transform animate-[pulse-red-glow_2s_ease-in-out_infinite]">
           <img src={btnJogar} alt="Jogar Agora" className="h-[56px] sm:h-[64px] md:h-[72px]" />
         </a>
       </div>
