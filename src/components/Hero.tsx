@@ -1,4 +1,5 @@
 import chaosAgeLogo from "@/assets/chaos_age.png";
+import btnJogar from "@/assets/btn_jogar.png";
 
 const Hero = () => {
   return (
@@ -26,8 +27,8 @@ const Hero = () => {
         <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-md">
           O MMORPG mais épico como você nunca viu!
         </p>
-        <a href="#" className="btn-play animate-pulse-glow">
-          JOGAR AGORA
+        <a href="#" className="hover:scale-105 transition-transform">
+          <img src={btnJogar} alt="Jogar Agora" className="h-[56px] sm:h-[64px] md:h-[72px]" />
         </a>
       </div>
     </section>
