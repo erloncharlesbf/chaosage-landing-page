@@ -6,18 +6,20 @@ const Hero = () => {
       {/* 10px spacing between nav and content */}
       <div style={{ height: "10px" }} />
 
-      {/* Spacer to push CTA below the dragon area */}
-      <div className="h-[350px] sm:h-[450px] md:h-[500px]" />
-
-      {/* CTA over/below the image */}
-      <div className="relative -mt-32 sm:-mt-40 z-10 flex flex-col items-center text-center px-4 pb-8">
+      {/* Logo isolated, positioned above dragon heads */}
+      <div className="relative z-20 flex justify-center" style={{ marginTop: "20px" }}>
         <img
           src={chaosAgeLogo}
           alt="ChaosAge - MMORPG Server"
           className="w-[280px] sm:w-[350px] md:w-[420px]"
-          style={{ marginTop: "-350px" }}
         />
-        <div style={{ height: "200px" }} />
+      </div>
+
+      {/* Spacer to push CTA below the dragon area */}
+      <div className="h-[250px] sm:h-[350px] md:h-[400px]" />
+
+      {/* CTA content, pushed 100px lower */}
+      <div className="relative z-10 flex flex-col items-center text-center px-4 pb-8" style={{ marginTop: "100px" }}>
         <h1 className="font-cinzel text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3 text-glow">
           ENTRE NO CAOS!
         </h1>

@@ -20,8 +20,15 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="recursos" className="py-16 px-4">
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8" style={{ maxWidth: "var(--content-max)" }}>
+    <section id="recursos" className="relative py-16 px-4">
+      {/* Gradient overlay: transparent to black */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
+        }}
+      />
+      <div className="relative z-10 mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8" style={{ maxWidth: "var(--content-max)" }}>
         {features.map((f, i) => (
           <div
             key={f.title}
