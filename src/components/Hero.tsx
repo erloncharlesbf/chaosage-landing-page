@@ -1,3 +1,5 @@
+import chaosAgeLogo from "@/assets/chaos_age.png";
+
 const Hero = () => {
   return (
     <section className="relative pt-[var(--nav-height)]">
@@ -9,6 +11,11 @@ const Hero = () => {
 
       {/* CTA over/below the image */}
       <div className="relative -mt-32 sm:-mt-40 z-10 flex flex-col items-center text-center px-4 pb-8">
+        <img
+          src={chaosAgeLogo}
+          alt="ChaosAge - MMORPG Server"
+          className="w-[280px] sm:w-[350px] md:w-[420px] mb-6"
+        />
         <h1 className="font-cinzel text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3 text-glow">
           ENTRE NO CAOS!
         </h1>
