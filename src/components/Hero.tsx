@@ -14,8 +14,10 @@ const Hero = () => {
         <img
           src={chaosAgeLogo}
           alt="ChaosAge - MMORPG Server"
-          className="w-[280px] sm:w-[350px] md:w-[420px] mb-6"
+          className="w-[280px] sm:w-[350px] md:w-[420px]"
+          style={{ marginTop: "-350px" }}
         />
+        <div style={{ height: "200px" }} />
         <h1 className="font-cinzel text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3 text-glow">
           ENTRE NO CAOS!
         </h1>
