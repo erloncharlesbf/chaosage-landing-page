@@ -7,7 +7,7 @@ import bgImage from "@/assets/hero-2.png";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div id="top" className="min-h-screen bg-background">
       <Navbar />
       <div
         className="mx-auto bg-cover bg-top bg-no-repeat"
