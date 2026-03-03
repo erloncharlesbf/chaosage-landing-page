@@ -5,9 +5,9 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
-    { label: "Início", href: "#" },
+    { label: "Início", href: "#top" },
     { label: "Recursos", href: "#recursos" },
-    { label: "Status", href: "#" },
+    { label: "Status", href: "#status" },
     { label: "Downloads", href: "#download" },
     { label: "Discord", href: "https://discord.gg/GGuNsf8G" },
   ];
