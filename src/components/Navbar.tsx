@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: "Recursos", href: "#recursos" },
     { label: "Status", href: "#" },
     { label: "Downloads", href: "#download" },
-    { label: "Discord", href: "https://discord.gg/" },
+    { label: "Discord", href: "https://discord.gg/GGuNsf8G" },
   ];
 
   return (

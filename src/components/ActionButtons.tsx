@@ -11,7 +11,7 @@ const ActionButtons = () => {
         <a href="#" className="hover:scale-105 transition-transform">
           <img src={btnDownload} alt="Download Client" className="h-[56px] sm:h-[64px] md:h-[72px]" />
         </a>
-        <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
+        <a href="https://discord.gg/GGuNsf8G" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
           <img src={btnDiscord} alt="Entre no Discord" className="h-[56px] sm:h-[64px] md:h-[72px]" />
         </a>
       </div>
