@@ -2,7 +2,7 @@ const InfoPanel = () => {
   return (
     <section id="status" className="pt-16 px-4">
       <div
-        className="mx-auto grid grid-cols-1 md:grid-cols-[70%_30%] bg-black rounded overflow-hidden"
+        className="mx-auto grid grid-cols-1 md:grid-cols-[60%_40%] bg-black rounded overflow-hidden"
         style={{ maxWidth: "var(--content-max)" }}
       >
         {/* Notícias */}
@@ -11,9 +11,9 @@ const InfoPanel = () => {
             Notícias &amp; Atualizações
           </h2>
           <ul className="space-y-2 text-sm md:text-base text-muted-foreground list-disc list-inside">
-            <li>Novo evento de arena liberado</li>
-            <li>Ajustes de balanceamento e correções</li>
-            <li>Drop raro nas dungeons noturnas</li>
+            <li><a href="#" className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300">Novo evento de arena liberado</a></li>
+            <li><a href="#" className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300">Ajustes de balanceamento e correções</a></li>
+            <li><a href="#" className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300">Drop raro nas dungeons noturnas</a></li>
           </ul>
         </div>
 

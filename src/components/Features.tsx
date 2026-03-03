@@ -26,7 +26,7 @@ const Features = () => {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, transparent 0%, hsl(var(--background)) 100%)",
+          background: "rgba(0,0,0,0.3)",
         }}
       />
       <div className="relative z-10 mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8" style={{ maxWidth: "var(--content-max)" }}>
