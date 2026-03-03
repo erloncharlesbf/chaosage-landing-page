@@ -22,7 +22,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="recursos" className="relative py-16 px-4">
+    <section id="recursos" className="relative py-24 px-4">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

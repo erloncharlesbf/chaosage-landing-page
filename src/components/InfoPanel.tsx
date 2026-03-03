@@ -1,6 +1,6 @@
 const InfoPanel = () => {
   return (
-    <section id="status" className="px-4 pb-16">
+    <section id="status" className="pt-16 px-4">
       <div
         className="mx-auto grid grid-cols-1 md:grid-cols-[70%_30%] bg-black rounded overflow-hidden"
         style={{ maxWidth: "var(--content-max)" }}

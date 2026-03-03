@@ -3,7 +3,7 @@ import btnJogar from "@/assets/btn_jogar.png";
 
 const Hero = () => {
   return (
-    <section className="relative pt-[var(--nav-height)]">
+    <section className="relative pt-[var(--nav-height)] pb-48">
       {/* 10px spacing between nav and content */}
       <div style={{ height: "10px" }} />
 

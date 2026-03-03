@@ -3,7 +3,7 @@ import btnDiscord from "@/assets/btn_discord.png";
 
 const ActionButtons = () => {
   return (
-    <section id="download" className="pb-16 px-4">
+    <section id="download" className="py-24 px-4">
       <div
         className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center"
         style={{ maxWidth: "var(--content-max)", maxInlineSize: "640px" }}
