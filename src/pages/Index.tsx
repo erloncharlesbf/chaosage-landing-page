@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import ActionButtons from "@/components/ActionButtons";
+import InfoPanel from "@/components/InfoPanel";
 import bgImage from "@/assets/hero-2.png";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <Hero />
         <Features />
         <ActionButtons />
+        <InfoPanel />
       </div>
       <footer className="py-6 text-center border-t border-border">
         <p className="font-cinzel text-xs text-muted-foreground tracking-wider">
