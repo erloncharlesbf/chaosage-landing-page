@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import chaosAgeLogo from "@/assets/chaos_age.png";
+import registroBg from "@/assets/registro-bg.png";
 
 const Registro = () => {
   const [password, setPassword] = useState("");
@@ -19,7 +20,16 @@ const Registro = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div
+      className="min-h-screen text-foreground bg-background"
+      style={{
+        backgroundImage: `url(${registroBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <Navbar />
       <main className="pt-[var(--nav-height)] flex flex-col items-center px-4 py-12">
         <img
