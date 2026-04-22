@@ -59,10 +59,6 @@ const Registro = () => {
           alt="ChaosAge"
           className="w-[220px] sm:w-[280px] mb-6"
         />
-        <h1 className="font-cinzel text-3xl sm:text-4xl font-bold text-primary text-glow mb-8 text-center">
-          Registro ChaosAge
-        </h1>
-
         <form
           action="/registro.php"
           method="POST"
@@ -70,6 +66,10 @@ const Registro = () => {
           noValidate
           className="w-full max-w-md bg-card border border-border rounded-md p-6 sm:p-8 shadow-[0_0_30px_hsl(25_80%_50%/0.15)] space-y-5"
         >
+          <h1 className="font-cinzel text-3xl sm:text-4xl font-bold text-primary text-glow text-center mb-2">
+            Registro
+          </h1>
+
           <div className="space-y-2">
             <Label htmlFor="username" className="font-cinzel tracking-wider uppercase text-sm">
               Login
