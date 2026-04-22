@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="mx-auto flex items-center justify-between px-4 py-3" style={{ maxWidth: "var(--content-max)" }}>
-        <a href="#" className="font-cinzel text-xl font-bold tracking-wider text-primary text-glow">
+        <Link to="/" className="font-cinzel text-xl font-bold tracking-wider text-primary text-glow">
           CHAOSAGE
-        </a>
+        </Link>
 
         {/* Desktop */}
         <ul className="hidden md:flex items-center gap-6">
