@@ -4,8 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import chaosAgeLogo from "@/assets/chaos_age.png";
 import registroBg from "@/assets/registro-bg.png";
-import btnCriarConta from "@/assets/btn_criar_conta.png";
-import btnCriarContaDisabled from "@/assets/btn_criar_conta_disabled.png";
+import btnCriarConta from "@/assets/criarconta.png";
 
 const loginRegex = /^[A-Za-z]{5,}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -145,11 +144,11 @@ const Registro = () => {
               className={`bg-transparent border-0 p-0 transition-transform ${
                 validation.allValid
                   ? "cursor-pointer hover:scale-105 animate-[pulse-red-glow_2s_ease-in-out_infinite]"
-                  : "cursor-not-allowed opacity-90"
+                  : "cursor-not-allowed grayscale opacity-60"
               }`}
             >
               <img
-                src={validation.allValid ? btnCriarConta : btnCriarContaDisabled}
+                src={btnCriarConta}
                 alt="Criar conta"
                 className="h-[56px] sm:h-[64px] md:h-[72px]"
               />
