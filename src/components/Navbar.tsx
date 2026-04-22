@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
-    { label: "Início", href: "#top" },
-    { label: "Recursos", href: "#recursos" },
-    { label: "Status", href: "#status" },
-    { label: "Downloads", href: "#download" },
+    { label: "Início", href: "/", isRoute: true },
+    { label: "Recursos", href: "/#recursos" },
+    { label: "Status", href: "/#status" },
+    { label: "Downloads", href: "/#download" },
     { label: "Discord", href: "https://discord.gg/GGuNsf8G" },
   ];
 
