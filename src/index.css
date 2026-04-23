@@ -131,6 +131,24 @@
   .text-glow {
     text-shadow: 0 0 20px hsl(25 80% 50% / 0.5), 0 0 40px hsl(25 80% 50% / 0.2);
   }
+
+  /* Hero background: scale up on mobile/tablet so dragons stay visible on the sides */
+  .hero-bg {
+    background-size: 200% auto;
+    background-position: top center;
+  }
+
+  @media (min-width: 640px) {
+    .hero-bg {
+      background-size: 150% auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-bg {
+      background-size: cover;
+    }
+  }
 }
 
 @keyframes pulse-red-glow {

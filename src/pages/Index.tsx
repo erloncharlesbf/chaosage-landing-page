@@ -10,7 +10,7 @@ const Index = () => {
     <div id="top" className="min-h-screen bg-background">
       <Navbar />
       <div
-        className="mx-auto bg-cover bg-top bg-no-repeat"
+        className="mx-auto hero-bg bg-top bg-no-repeat"
         style={{
           maxWidth: "var(--content-max)",
           backgroundImage: `url(${bgImage})`,
