@@ -57,6 +57,8 @@ const Registro = () => {
         <img
           src={chaosAgeLogo}
           alt="ChaosAge"
+          fetchPriority="high"
+          decoding="async"
           className="w-[220px] sm:w-[280px] mb-6"
         />
         <form
@@ -150,6 +152,7 @@ const Registro = () => {
               <img
                 src={btnCriarConta}
                 alt="Criar conta"
+                decoding="async"
                 className="h-[56px] sm:h-[64px] md:h-[72px]"
               />
             </button>

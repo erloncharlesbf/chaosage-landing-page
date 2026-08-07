@@ -62,6 +62,8 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0]; index: n
       <img
         src={isHovered ? feature.iconHover : feature.icon}
         alt={feature.title}
+        loading="lazy"
+        decoding="async"
         className="w-16 h-16 mb-3 object-contain transition-transform duration-300 group-hover:scale-110"
         loading="lazy"
       />

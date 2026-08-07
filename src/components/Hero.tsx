@@ -12,6 +12,8 @@ const Hero = () => {
         <img
           src={chaosAgeLogo}
           alt="ChaosAge - MMORPG Server"
+          fetchPriority="high"
+          decoding="async"
           className="w-[280px] sm:w-[350px] md:w-[420px]"
         />
       </div>
@@ -28,7 +30,7 @@ const Hero = () => {
           O MMORPG mais épico como você nunca viu!
         </p>
         <a href="/registro" className="hover:scale-105 transition-transform animate-[pulse-red-glow_2s_ease-in-out_infinite]">
-          <img src={btnJogar} alt="Jogar Agora" className="h-[56px] sm:h-[64px] md:h-[72px]" />
+          <img src={btnJogar} alt="Jogar Agora" fetchPriority="high" decoding="async" className="h-[56px] sm:h-[64px] md:h-[72px]" />
         </a>
       </div>
     </section>
