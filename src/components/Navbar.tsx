@@ -10,6 +10,7 @@ const Navbar = () => {
     { label: "Recursos", href: "/#recursos" },
     { label: "Status", href: "/#status" },
     { label: "Downloads", href: "/#download" },
+    { label: "Fórum", href: "/forum" },
     { label: "Discord", href: "https://discord.gg/GGuNsf8G" },
   ];
 
@@ -24,12 +25,21 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
-                className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300"
-              >
-                {link.label}
-              </a>
+              {link.isRoute ? (
+                <Link
+                  to={link.href}
+                  className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  href={link.href}
+                  className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
+                  {link.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -50,13 +60,23 @@ const Navbar = () => {
           <ul className="flex flex-col items-center gap-4 py-4">
             {links.map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </a>
+                {link.isRoute ? (
+                  <Link
+                    to={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="font-cinzel text-sm tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
