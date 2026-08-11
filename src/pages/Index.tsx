@@ -12,7 +12,7 @@ const Index = () => {
       <Navbar />
       <div
         className="w-full hero-bg"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{ backgroundImage: `url(${bgImage}), url(${cloudTile})` }}
       >
         <Hero />
       </div>
