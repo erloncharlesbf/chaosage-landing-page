@@ -143,15 +143,17 @@
      com a textura de nuvem repetida por baixo preenchendo qualquer sobra. */
   .hero-bg {
     background-repeat: no-repeat, repeat;
-    background-size: 100% auto, 512px 512px;
+    background-size: 100% auto, 640px 640px;
     background-position: center top, center top;
   }
 
   /* Textura de nuvem repetida nas seções abaixo do hero */
   .cloud-tile {
     background-repeat: repeat;
-    background-size: 512px 512px;
+    background-size: 640px 640px;
     background-position: center top;
+    background-color: hsl(0 0% 5%);
+    background-blend-mode: soft-light;
   }
 }
 

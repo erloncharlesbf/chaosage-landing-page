@@ -11,8 +11,12 @@ const Index = () => {
     <div id="top" className="min-h-screen bg-background">
       <Navbar />
       <div
-        className="w-full hero-bg"
-        style={{ backgroundImage: `url(${bgImage}), url(${cloudTile})` }}
+        className="relative w-full hero-bg"
+        style={{
+          backgroundImage: `url(${bgImage}), url(${cloudTile})`,
+          aspectRatio: "1600 / 1073",
+          minHeight: "560px",
+        }}
       >
         <Hero />
       </div>
