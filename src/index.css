@@ -139,30 +139,19 @@
     text-shadow: 0 0 20px hsl(25 80% 50% / 0.5), 0 0 40px hsl(25 80% 50% / 0.2);
   }
 
-  /* Hero background: scale up on mobile/tablet so dragons stay visible on the sides */
+  /* Hero background: fills the full screen width at any aspect ratio */
   .hero-bg {
-    background-size: 200% auto;
-    background-position: top center;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
 
-  @media (min-width: 640px) {
-    .hero-bg {
-      background-size: 150% auto;
-    }
-  }
-
-  /* Desktop and ultra-wide: always fill the full screen width */
-  @media (min-width: 1024px) {
-    .hero-bg {
-      background-size: 100% auto;
-    }
-  }
-
-  /* Repeating texture below the hero, matching the hero's bottom edge */
-  .body-tile {
+  /* Repeating cloud texture below the hero, matching the hero art */
+  .cloud-tile {
     background-repeat: repeat;
-    background-size: 512px auto;
-    background-position: top center;
+    background-size: 512px 512px;
+    background-position: center top;
   }
 }
 
