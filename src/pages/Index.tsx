@@ -4,19 +4,22 @@ import Features from "@/components/Features";
 import ActionButtons from "@/components/ActionButtons";
 import InfoPanel from "@/components/InfoPanel";
 import bgImage from "@/assets/hero-2.png";
+import bodyTile from "@/assets/body-tile.png";
 
 const Index = () => {
   return (
     <div id="top" className="min-h-screen bg-background">
       <Navbar />
       <div
-        className="mx-auto hero-bg bg-top bg-no-repeat"
-        style={{
-          maxWidth: "var(--content-max)",
-          backgroundImage: `url(${bgImage})`,
-        }}
+        className="w-full hero-bg bg-top bg-no-repeat"
+        style={{ backgroundImage: `url(${bgImage})` }}
       >
         <Hero />
+      </div>
+      <div
+        className="w-full body-tile"
+        style={{ backgroundImage: `url(${bodyTile})` }}
+      >
         <Features />
         <ActionButtons />
         <InfoPanel />
