@@ -65,7 +65,6 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0]; index: n
         loading="lazy"
         decoding="async"
         className="w-16 h-16 mb-3 object-contain transition-transform duration-300 group-hover:scale-110"
-        loading="lazy"
       />
       <h3 className="font-cinzel text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
       <p className="text-muted-foreground text-base leading-relaxed max-w-[260px]">{feature.description}</p>
