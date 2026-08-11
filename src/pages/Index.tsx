@@ -3,22 +3,22 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import ActionButtons from "@/components/ActionButtons";
 import InfoPanel from "@/components/InfoPanel";
-import bgImage from "@/assets/hero-2.png";
-import bodyTile from "@/assets/body-tile.png";
+import bgImage from "@/assets/hero-wide.png";
+import cloudTile from "@/assets/cloud-tile.png";
 
 const Index = () => {
   return (
     <div id="top" className="min-h-screen bg-background">
       <Navbar />
       <div
-        className="w-full hero-bg bg-top bg-no-repeat"
+        className="w-full hero-bg"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <Hero />
       </div>
       <div
-        className="w-full body-tile"
-        style={{ backgroundImage: `url(${bodyTile})` }}
+        className="w-full cloud-tile"
+        style={{ backgroundImage: `url(${cloudTile})` }}
       >
         <Features />
         <ActionButtons />
