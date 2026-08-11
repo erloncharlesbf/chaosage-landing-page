@@ -141,7 +141,6 @@
 
   /* Hero background: fills the full screen width at any aspect ratio */
   .hero-bg {
-    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

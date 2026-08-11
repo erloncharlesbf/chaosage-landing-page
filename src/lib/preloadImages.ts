@@ -1,4 +1,5 @@
-import heroBg from "@/assets/hero-2.png";
+import heroBg from "@/assets/hero-wide.png";
+import cloudTile from "@/assets/cloud-tile.png";
 import chaosAgeLogo from "@/assets/chaos_age.png";
 import btnJogar from "@/assets/btn_jogar.png";
 import btnDownload from "@/assets/btn_download.png";
