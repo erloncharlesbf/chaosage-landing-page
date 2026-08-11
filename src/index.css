@@ -151,10 +151,18 @@
     }
   }
 
+  /* Desktop and ultra-wide: always fill the full screen width */
   @media (min-width: 1024px) {
     .hero-bg {
-      background-size: cover;
+      background-size: 100% auto;
     }
+  }
+
+  /* Repeating texture below the hero, matching the hero's bottom edge */
+  .body-tile {
+    background-repeat: repeat;
+    background-size: 512px auto;
+    background-position: top center;
   }
 }
 
