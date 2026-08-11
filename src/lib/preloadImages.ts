@@ -26,6 +26,7 @@ const deferred = [
   iconPvpRed,
   iconEventosRed,
   iconSemLimitesRed,
+  cloudTile,
   registroBg,
   btnCriarConta,
 ];
