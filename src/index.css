@@ -139,11 +139,12 @@
     text-shadow: 0 0 20px hsl(25 80% 50% / 0.5), 0 0 40px hsl(25 80% 50% / 0.2);
   }
 
-  /* Hero: a arte preenche 100% da largura em qualquer proporção (inclusive ultrawide),
-     com a textura de nuvem repetida por baixo preenchendo qualquer sobra. */
+  /* Hero: a arte é exibida em seu tamanho natural (100%), sempre centralizada.
+     Ao aumentar a largura da tela a imagem permanece fixa no centro; a textura
+     de nuvem repetida por baixo preenche qualquer sobra nas laterais. */
   .hero-bg {
     background-repeat: no-repeat, repeat;
-    background-size: 100% auto, 640px 640px;
+    background-size: auto auto, 640px 640px;
     background-position: center top, center top;
   }
 
